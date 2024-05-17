@@ -67,7 +67,6 @@ def remove_duplicates(results):
     return unique_results    
     
 def pwnd():
-    os.chdir()
     print(colored("Pwned Password Checker", 'red', attrs=['reverse', 'blink', 'bold']))
     print("1) Check Single - Multiple Passwords")
     print("2) Check List of Passwords")    
@@ -126,9 +125,6 @@ def pwnd():
                 passwords = file.read().splitlines()
         except FileNotFoundError:
             print("File not found.")
-            time.sleep(1)
-            clear_screen()
-            ascii_banner()
             pwnd()
         
         results = []
