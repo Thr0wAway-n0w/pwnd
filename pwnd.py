@@ -217,9 +217,7 @@ def pwnd():
                 pwnd()
     elif choice == '3':
         print("Exiting...")
-        clear_screen()
-        ascii_banner()
-        what_now()
+        exit
     else:
         print("\033[91m INVALID SELECTION\033[0m")
         time.sleep(1)
